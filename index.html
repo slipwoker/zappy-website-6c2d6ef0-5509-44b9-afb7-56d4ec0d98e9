@@ -245,6 +245,359 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.home-services-section {
+  position: relative;
+  background-color: var(--bg-light);
+  background-image: linear-gradient(180deg, #E8F6F7 0%, #D0EAF0 100%);
+  color: var(--text-dark);
+  padding: 100px 24px 90px;
+  overflow: visible;
+  font-family: 'Inter', 'Suisse Int\'l', sans-serif;
+}
+
+/* Water texture strip */
+.home-services-section__water-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 38%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-services-section__water-strip [data-preserve-bg='0'] {
+  width: 100%;
+  height: 100%;
+  opacity: 0.13;
+  filter: saturate(1.2) blur(1px);
+}
+
+.home-services-section__water-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(232,246,247,0) 0%, rgba(232,246,247,0.85) 70%, #D0EAF0 100%);
+}
+
+/* Decorative ring */
+.home-services-section__deco-ring {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 280px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Decorative gold blob */
+.home-services-section__deco-blob {
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Container */
+.home-services-section__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+/* Intro block */
+.home-services-section__intro {
+  max-width: 640px;
+}
+
+.home-services-section__label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  background: rgba(44,183,165,0.1);
+  border: 1px solid rgba(44,183,165,0.25);
+  border-radius: 100px;
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.home-services-section__heading {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text-dark);
+  margin: 0 0 20px;
+}
+
+.home-services-section__intro-text {
+  font-size: 1rem !important;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 32px;
+  max-width: 560px;
+}
+
+/* CTA button */
+.home-services-section__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1B6B8A;
+  color: #FFFFFF;
+  padding: 14px 32px;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 8px 24px rgba(27,107,138,0.22);
+}
+
+.home-services-section__cta:hover {
+  background: var(--primary);
+  box-shadow: 0 12px 32px rgba(18,91,255,0.28);
+  transform: translateY(-2px);
+}
+
+/* Cards grid */
+.home-services-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Individual card */
+.home-services-section__card {
+  position: relative;
+  background: rgba(255,255,255,0.62);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(44,183,165,0.22);
+  border-radius: 20px;
+  padding: 2rem 2rem 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  box-shadow: 0 8px 32px rgba(13,43,62,0.07), inset 0 1px 0 rgba(255,255,255,0.8);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.home-services-section__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  border-radius: 20px 20px 0 0;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.home-services-section__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 48px rgba(13,43,62,0.13), inset 0 1px 0 rgba(255,255,255,0.9);
+  border-color: rgba(44,183,165,0.42);
+}
+
+.home-services-section__card:hover::before {
+  opacity: 1;
+}
+
+/* Card icon wrap */
+.home-services-section__card-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(44,183,165,0.12) 0%, rgba(18,91,255,0.08) 100%);
+  border: 1px solid rgba(44,183,165,0.2);
+  color: var(--secondary);
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+/* Card body */
+.home-services-section__card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-services-section__card-title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+
+.home-services-section__card-desc {
+  font-size: 1rem !important;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Card tag / audience label */
+.home-services-section__card-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(44,183,165,0.15);
+}
+
+.home-services-section__tag-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--secondary);
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.home-services-section__card-tag small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Card decorative wave */
+.home-services-section__card-wave {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  width: 110px;
+  height: 22px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Bottom divider */
+.home-services-section__divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.home-services-section__divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive: tablet and up */
+@media (min-width: 640px) {
+  .home-services-section__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+@media (min-width: 900px) {
+  .home-services-section {
+    padding: 120px 48px 90px;
+  }
+
+  .home-services-section__container {
+    grid-template-columns: 340px 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .home-services-section__intro {
+    position: sticky;
+    top: 120px;
+    max-width: 100%;
+  }
+
+  .home-services-section__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .home-services-section__heading {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .home-services-section__container {
+    grid-template-columns: 380px 1fr;
+    gap: 80px;
+  }
+
+  .home-services-section__heading {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 639px) {
+  .home-services-section {
+    padding: 100px 16px 90px;
+  }
+
+  .home-services-section__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-services-section__card {
+    padding: 1.5rem 1.25rem 1.25rem;
+  }
+
+  .home-services-section__deco-ring {
+    display: none;
+  }
+
+  .home-services-section__deco-blob {
+    width: 120px;
+    height: 120px;
+    right: -10px;
+    top: 20px;
+  }
+
+  .home-services-section__heading {
+    font-size: 2rem;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -295,31 +648,6 @@
         .navbar .sub-menu li a, nav.navbar .sub-menu li a, .zappy-products-dropdown .sub-menu a { color: var(--text-light) !important; }
       }
       @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
-    </style>
-
-    <style id="mobile-lang-menu-deployed-css">
-    @media (max-width: 768px) {
-      .lang-switcher,
-      .nav-cta-container .lang-switcher,
-      .nav-container .lang-switcher,
-      .navbar .lang-switcher,
-      .navbar .nav-cta-container .lang-switcher,
-      .nav-icons-left .lang-switcher,
-      .nav-ecommerce-icons .lang-switcher { display: none !important; }
-      .mobile-lang-menu { width: 100%; border-top: 1px solid rgba(128,128,128,0.2); padding: 8px 0 0 0; margin-top: 8px; }
-      .mobile-lang-toggle { display: flex !important; align-items: center; justify-content: space-between; width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer; font-size: 15px; color: inherit; font-family: inherit; }
-      .mobile-lang-toggle::after { content: ''; display: inline-block; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform 0.3s ease; margin-left: 8px; }
-      .mobile-lang-toggle.expanded::after { transform: rotate(-135deg); }
-      .mobile-lang-options { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-      .mobile-lang-options.expanded { max-height: 300px; }
-      .mobile-lang-option { display: flex !important; align-items: center; gap: 10px; padding: 10px 24px; text-decoration: none; color: inherit; font-size: 14px; font-family: inherit; }
-      .mobile-lang-option:hover { background: rgba(128,128,128,0.1); }
-      .mobile-lang-option.active { font-weight: 600; opacity: 0.7; pointer-events: none; }
-      .mobile-lang-option img { width: 20px; height: 20px; border-radius: 50%; }
-    }
-    @media (min-width: 769px) {
-      .mobile-lang-menu { display: none !important; }
-    }
     </style>
 
     <style id="zappy-widget-visibility">
@@ -843,156 +1171,138 @@
   </div>
 </section>
 
-<section class="home-services-section" data-layout-spec="Home-services">
+<section class="home-services-section" data-layout-spec="Home-services" data-zappy-section="true">
+  <!-- Water texture background strip -->
+  <div class="home-services-section__water-strip" aria-hidden="true">
+    <div style="background-image: url('assets/site-home-services-image-1.webp'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+    <div class="home-services-section__water-overlay"></div>
+  </div>
+
+  <!-- Decorative teal circle ring -->
+  <svg class="home-services-section__deco-ring" data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="140" cy="140" r="135" stroke="#2CB7A5" stroke-width="1.5" opacity="0.12"></circle>
+    <circle cx="140" cy="140" r="110" stroke="#2CB7A5" stroke-width="0.8" opacity="0.07"></circle>
+  </svg>
+
   <!-- Decorative gold blob -->
-  <div class="home-services-blob-decor" aria-hidden="true">
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
-      <path d="M44.3,-57.2C56.6,-46.5,65.2,-31.2,68.1,-15.1C71,1,68.2,17.9,60.3,31.6C52.4,45.3,39.4,55.8,24.5,62.1C9.6,68.4,-7.2,70.5,-22.8,65.5C-38.4,60.5,-52.8,48.4,-61.1,33.1C-69.4,17.8,-71.6,-0.7,-66.5,-16.8C-61.4,-32.9,-49,-46.6,-35.3,-57.1C-21.6,-67.6,-6.6,-74.9,7.8,-74.2C22.2,-73.5,32,-67.9,44.3,-57.2Z" transform="translate(100 100)" fill="#F5C842" opacity="0.15"></path>
-    </svg>
-  </div>
+  <svg class="home-services-section__deco-blob" data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M160,40 Q200,60 190,110 Q180,160 130,175 Q80,190 50,155 Q20,120 35,75 Q50,30 100,20 Q130,12 160,40Z" fill="#FFB703" opacity="0.15"></path>
+  </svg>
 
-  <!-- Decorative teal ring -->
-  <div class="home-services-ring-decor" aria-hidden="true">
-    <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
-      <circle cx="140" cy="140" r="130" fill="none" stroke="#3ABFBF" stroke-width="2" opacity="0.10"></circle>
-    </svg>
-  </div>
-
-  <div class="home-services-container">
+  <div class="home-services-section__container">
     <!-- Intro block -->
-    <div class="home-services-intro">
-      <span class="home-services-label">Our Courses</span>
-      <h2 class="home-services-heading">Courses designed for<br>where you are now.</h2>
-      <p class="home-services-intro-text">Whether you're entering the pool for the first time, returning after years away, training for fitness, or polishing technique — Swim-By offers structured beginner swim lessons and advanced programmes with supportive progression at every stage.</p>
+    <div class="home-services-section__intro">
+      <span class="home-services-section__label">Our Courses</span>
+      <h2 class="home-services-section__heading">Courses designed for<br>where you are now.</h2>
+      <p class="home-services-section__intro-text">Whether you're entering the pool for the first time, returning after years away, training for fitness, or polishing technique — Swim-By offers structured beginner swim lessons and advanced programmes with supportive progression at every stage.</p>
+      <a href="/contact" class="home-services-section__cta btn-cta">Explore All Courses</a>
     </div>
 
-    <!-- Water texture image strip -->
-    <div class="home-services-image-strip">
-      <img data-placeholder="home-services-image-1" data-context="Aerial top-down view of a calm swimming pool with crystal-clear turquoise water, gentle caustic light patterns rippling across the surface, soft aqua tones, premium photography style, no people, abstract water texture" width="1200" height="220" src="/assets/site-home-services-image-1.webp" alt="Calm turquoise swimming pool water surface with light reflections">
-      <div class="home-services-strip-overlay"></div>
-    </div>
+    <!-- Cards grid -->
+    <div class="home-services-section__grid">
 
-    <!-- Course cards grid -->
-    <div class="home-services-grid">
-
-      <!-- Card 1: Adult Beginner -->
-      <article class="home-services-card">
-        <div class="home-services-card-icon">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-element-type="icon" data-icon-type="svg" aria-hidden="true">
-            <circle cx="18" cy="8" r="4" stroke="currentColor" stroke-width="1.8" fill="none"></circle>
-            <path d="M6 28c2-4 6-7 12-7s10 3 12 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"></path>
-            <path d="M4 32c4-2 8-3 14-3s10 1 14 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none" opacity="0.4"></path>
+      <!-- Card 1: Adult Beginner Foundations -->
+      <article class="home-services-section__card">
+        <div class="home-services-section__card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="14" cy="8" r="4" stroke="currentColor" stroke-width="1.8"></circle>
+            <path d="M4 22c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M2 20q4 3 6 0t6 0t6 0t6 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.5"></path>
           </svg>
         </div>
-        <div class="home-services-card-content">
-          <h3 class="home-services-card-title">Adult Beginner Foundations</h3>
-          <p class="home-services-card-desc">A calm, structured introduction to the water for adults who have never swum before or feel uncertain in the pool. We build breath control, buoyancy, and basic strokes at your pace.</p>
-          <div class="home-services-card-tag">
-            <span class="home-services-tag-dot"></span>
-            Suits: First-time swimmers &amp; returning adults
+        <div class="home-services-section__card-body">
+          <h3 class="home-services-section__card-title">Adult Beginner Foundations</h3>
+          <p class="home-services-section__card-desc">A calm, structured introduction to the water for adults who have never swum before or feel uncertain in the pool. We build breath control, buoyancy, and basic strokes at your pace.</p>
+          <div class="home-services-section__card-tag">
+            <span class="home-services-section__tag-dot"></span>
+            <small>Suits: first-time adult swimmers &amp; those returning to water</small>
           </div>
         </div>
-        <!-- Decorative stroke path fragment -->
-        <svg class="home-services-card-deco" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-no-icon-edit="true">
-          <path d="M0,20 Q15,10 30,20 T60,20 T90,20 T120,20" stroke="#2CB7A5" stroke-width="1.5" opacity="0.25" fill="none" stroke-linecap="round"></path>
-          <path d="M0,30 Q15,20 30,30 T60,30 T90,30 T120,30" stroke="#2CB7A5" stroke-width="1" opacity="0.15" fill="none" stroke-linecap="round"></path>
+        <!-- Decorative wave motif inside card -->
+        <svg class="home-services-section__card-wave" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,12 Q15,4 30,12 T60,12 T90,12 T120,12" stroke="#2CB7A5" stroke-width="1.2" opacity="0.25" fill="none"></path>
+          <path d="M0,18 Q15,10 30,18 T60,18 T90,18 T120,18" stroke="#2CB7A5" stroke-width="0.8" opacity="0.15" fill="none"></path>
         </svg>
       </article>
 
-      <!-- Card 2: Water Safety -->
-      <article class="home-services-card">
-        <div class="home-services-card-icon">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-element-type="icon" data-icon-type="svg" aria-hidden="true">
-            <path d="M18 4L6 10v8c0 7 5.4 13.5 12 15.5C24.6 31.5 30 25 30 18v-8L18 4z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"></path>
-            <path d="M13 18l3.5 3.5L23 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+      <!-- Card 2: Water Safety & Confidence -->
+      <article class="home-services-section__card">
+        <div class="home-services-section__card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14 3L5 8v7c0 5 4 9.5 9 11 5-1.5 9-6 9-11V8L14 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+            <path d="M10 14l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
-        <div class="home-services-card-content">
-          <h3 class="home-services-card-title">Water Safety &amp; Confidence</h3>
-          <p class="home-services-card-desc">Essential water awareness and survival skills for those who want to feel safe and confident in aquatic environments — pools, open water, or recreational swimming.</p>
-          <div class="home-services-card-tag">
-            <span class="home-services-tag-dot"></span>
-            Suits: Anxious swimmers &amp; safety-focused learners
+        <div class="home-services-section__card-body">
+          <h3 class="home-services-section__card-title">Water Safety &amp; Confidence</h3>
+          <p class="home-services-section__card-desc">Essential water awareness and survival skills for those who want to feel safe and confident in aquatic environments — pools, open water, or recreational swimming.</p>
+          <div class="home-services-section__card-tag">
+            <span class="home-services-section__tag-dot"></span>
+            <small>Suits: all ages seeking aquatic safety awareness</small>
           </div>
         </div>
-        <svg class="home-services-card-deco" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-no-icon-edit="true">
-          <path d="M0,20 Q15,10 30,20 T60,20 T90,20 T120,20" stroke="#125BFF" stroke-width="1.5" opacity="0.20" fill="none" stroke-linecap="round"></path>
-          <path d="M0,30 Q15,20 30,30 T60,30 T90,30 T120,30" stroke="#125BFF" stroke-width="1" opacity="0.12" fill="none" stroke-linecap="round"></path>
+        <svg class="home-services-section__card-wave" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,12 Q15,4 30,12 T60,12 T90,12 T120,12" stroke="#2CB7A5" stroke-width="1.2" opacity="0.25" fill="none"></path>
+          <path d="M0,18 Q15,10 30,18 T60,18 T90,18 T120,18" stroke="#2CB7A5" stroke-width="0.8" opacity="0.15" fill="none"></path>
         </svg>
       </article>
 
-      <!-- Card 3: Senior Wellness -->
-      <article class="home-services-card">
-        <div class="home-services-card-icon">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-element-type="icon" data-icon-type="svg" aria-hidden="true">
-            <circle cx="18" cy="8" r="4" stroke="currentColor" stroke-width="1.8" fill="none"></circle>
-            <path d="M10 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"></path>
-            <path d="M8 28c2-2 5-3 10-3s8 1 10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"></path>
-            <path d="M12 32h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.5" fill="none"></path>
+      <!-- Card 3: Senior Wellness Swimming -->
+      <article class="home-services-section__card">
+        <div class="home-services-section__card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14 5a3 3 0 100 6 3 3 0 000-6z" stroke="currentColor" stroke-width="1.8"></path>
+            <path d="M6 23c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M3 16c2 1 4 1.5 5 1M25 16c-2 1-4 1.5-5 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.55"></path>
           </svg>
         </div>
-        <div class="home-services-card-content">
-          <h3 class="home-services-card-title">Senior Wellness Swimming</h3>
-          <p class="home-services-card-desc">Low-impact aquatic sessions designed to improve mobility, joint health, and cardiovascular wellbeing. A gentle, affirming environment for older adults seeking lifetime fitness swimming.</p>
-          <div class="home-services-card-tag">
-            <span class="home-services-tag-dot"></span>
-            Suits: Older adults &amp; mobility-focused swimmers
+        <div class="home-services-section__card-body">
+          <h3 class="home-services-section__card-title">Senior Wellness Swimming</h3>
+          <p class="home-services-section__card-desc">Low-impact aquatic sessions designed to improve mobility, joint health, and cardiovascular wellbeing. A gentle, affirming environment for older adults seeking lifetime fitness swimming.</p>
+          <div class="home-services-section__card-tag">
+            <span class="home-services-section__tag-dot"></span>
+            <small>Suits: older adults prioritising mobility &amp; gentle fitness</small>
           </div>
         </div>
-        <svg class="home-services-card-deco" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-no-icon-edit="true">
-          <path d="M0,20 Q15,10 30,20 T60,20 T90,20 T120,20" stroke="#2CB7A5" stroke-width="1.5" opacity="0.25" fill="none" stroke-linecap="round"></path>
-          <path d="M0,30 Q15,20 30,30 T60,30 T90,30 T120,30" stroke="#2CB7A5" stroke-width="1" opacity="0.15" fill="none" stroke-linecap="round"></path>
+        <svg class="home-services-section__card-wave" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,12 Q15,4 30,12 T60,12 T90,12 T120,12" stroke="#2CB7A5" stroke-width="1.2" opacity="0.25" fill="none"></path>
+          <path d="M0,18 Q15,10 30,18 T60,18 T90,18 T120,18" stroke="#2CB7A5" stroke-width="0.8" opacity="0.15" fill="none"></path>
         </svg>
       </article>
 
-      <!-- Card 4: Stroke Technique -->
-      <article class="home-services-card">
-        <div class="home-services-card-icon">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" data-element-type="icon" data-icon-type="svg" aria-hidden="true">
-            <path d="M4 18c4-6 8-6 12 0s8 6 12 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"></path>
-            <path d="M4 24c4-4 8-4 12 0s8 4 12 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.5"></path>
-            <circle cx="28" cy="10" r="3" stroke="currentColor" stroke-width="1.6" fill="none"></circle>
-            <path d="M22 10c2-2 4-2 6 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.6"></path>
+      <!-- Card 4: Stroke Technique & Performance -->
+      <article class="home-services-section__card">
+        <div class="home-services-section__card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 18c4-4 8-2 12-6s8-6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M4 22c4-4 8-2 12-6s8-6 8-6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.45"></path>
+            <circle cx="21" cy="7" r="2.5" stroke="currentColor" stroke-width="1.5"></circle>
           </svg>
         </div>
-        <div class="home-services-card-content">
-          <h3 class="home-services-card-title">Stroke Technique &amp; Performance</h3>
-          <p class="home-services-card-desc">Precision coaching for swimmers looking to refine their freestyle, backstroke, breaststroke, or butterfly. Video analysis and drill-based sessions sharpen form and build speed.</p>
-          <div class="home-services-card-tag">
-            <span class="home-services-tag-dot"></span>
-            Suits: Intermediate to advanced swimmers
+        <div class="home-services-section__card-body">
+          <h3 class="home-services-section__card-title">Stroke Technique &amp; Performance</h3>
+          <p class="home-services-section__card-desc">Precision coaching for swimmers looking to refine their freestyle, backstroke, breaststroke, or butterfly. Video analysis and drill-based sessions sharpen form and build speed.</p>
+          <div class="home-services-section__card-tag">
+            <span class="home-services-section__tag-dot"></span>
+            <small>Suits: intermediate to advanced swimmers &amp; fitness athletes</small>
           </div>
         </div>
-        <svg class="home-services-card-deco" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-no-icon-edit="true">
-          <path d="M0,20 Q15,10 30,20 T60,20 T90,20 T120,20" stroke="#FFB703" stroke-width="1.5" opacity="0.30" fill="none" stroke-linecap="round"></path>
-          <path d="M0,30 Q15,20 30,30 T60,30 T90,30 T120,30" stroke="#FFB703" stroke-width="1" opacity="0.18" fill="none" stroke-linecap="round"></path>
+        <svg class="home-services-section__card-wave" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,12 Q15,4 30,12 T60,12 T90,12 T120,12" stroke="#2CB7A5" stroke-width="1.2" opacity="0.25" fill="none"></path>
+          <path d="M0,18 Q15,10 30,18 T60,18 T90,18 T120,18" stroke="#2CB7A5" stroke-width="0.8" opacity="0.15" fill="none"></path>
         </svg>
       </article>
 
-    </div>
-    <!-- End grid -->
-
-    <!-- CTA -->
-    <div class="home-services-cta">
-      <a href="/contact" class="btn-cta home-services-btn">Explore All Courses</a>
     </div>
   </div>
 
-  <!-- Bottom divider transitioning into darker value-proposition band -->
-  <div class="home-services-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="dividerShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#0E2233"></stop>
-          <stop offset="45%" stop-color="#125BFF" stop-opacity="0.18"></stop>
-          <stop offset="55%" stop-color="#2CB7A5" stop-opacity="0.22"></stop>
-          <stop offset="100%" stop-color="#0E2233"></stop>
-        </linearGradient>
-      </defs>
-      <!-- Diagonal fill shape -->
-      <path d="M0,80 L0,48 L1200,8 L1200,80 Z" fill="#061820"></path>
-      <!-- Thin shimmering line accent -->
-      <line x1="0" y1="48" x2="1200" y2="8" stroke="url(#dividerShimmer)" stroke-width="1.5" opacity="0.6"></line>
+  <!-- Bottom divider transitioning to dark section -->
+  <div class="home-services-section__divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Shimmering accent line -->
+      <path d="M0,45 Q180,30 360,48 T720,38 T1080,50 T1440,42" stroke="#2CB7A5" stroke-width="1" opacity="0.35" fill="#061820"></path>
+      <!-- Dark fill from bottom -->
+      <path d="M0,90 L0,52 Q180,35 360,55 T720,42 T1080,58 T1440,48 L1440,90 Z" fill="#061820"></path>
     </svg>
   </div>
 </section>
@@ -1605,76 +1915,6 @@
     })();
     </script>
 
-    <script id="zappy-mobile-lang-menu-script">
-    (function() {
-      function initMobileLangMenu() {
-        if (window.innerWidth > 768) {
-          var existingMenu = document.querySelector('.mobile-lang-menu');
-          if (existingMenu) existingMenu.remove();
-          return;
-        }
-        if (document.querySelector('.mobile-lang-menu')) return;
-        var switcher = document.querySelector('.lang-switcher');
-        if (!switcher) return;
-        var dropdown = switcher.querySelector('.lang-switcher-dropdown');
-        if (!dropdown) return;
-        var options = dropdown.querySelectorAll('.lang-option');
-        if (options.length === 0) return;
-        var navMenu = document.getElementById('navMenu') || document.querySelector('.nav-menu') || document.querySelector('nav ul');
-        if (!navMenu) return;
-        var currentLang = document.documentElement.lang || 'en';
-        var langConfigs = {
-          he: {name:'עברית',flag:'https://api.iconify.design/circle-flags/il.svg'},
-          en: {name:'English',flag:'https://api.iconify.design/circle-flags/us.svg'},
-          ar: {name:'العربية',flag:'https://api.iconify.design/circle-flags/sa.svg'},
-          fr: {name:'Français',flag:'https://api.iconify.design/circle-flags/fr.svg'},
-          es: {name:'Español',flag:'https://api.iconify.design/circle-flags/es.svg'},
-          de: {name:'Deutsch',flag:'https://api.iconify.design/circle-flags/de.svg'},
-          ru: {name:'Русский',flag:'https://api.iconify.design/circle-flags/ru.svg'},
-          zh: {name:'中文',flag:'https://api.iconify.design/circle-flags/cn.svg'},
-          ja: {name:'日本語',flag:'https://api.iconify.design/circle-flags/jp.svg'},
-          pt: {name:'Português',flag:'https://api.iconify.design/circle-flags/br.svg'},
-          it: {name:'Italiano',flag:'https://api.iconify.design/circle-flags/it.svg'},
-          ko: {name:'한국어',flag:'https://api.iconify.design/circle-flags/kr.svg'}
-        };
-        var container = document.createElement('div');
-        container.className = 'mobile-lang-menu';
-        var currentConfig = langConfigs[currentLang] || {name:currentLang,flag:''};
-        var toggleBtn = document.createElement('button');
-        toggleBtn.className = 'mobile-lang-toggle';
-        toggleBtn.type = 'button';
-        var currentFlagHtml = currentConfig.flag ? '<img src="' + currentConfig.flag + '" width="20" height="20" alt="" style="border-radius:50%;margin-right:8px;margin-left:8px;">' : '';
-        toggleBtn.innerHTML = currentFlagHtml + currentConfig.name;
-        container.appendChild(toggleBtn);
-        var optionsDiv = document.createElement('div');
-        optionsDiv.className = 'mobile-lang-options';
-        var currentLink = document.createElement('a');
-        currentLink.className = 'mobile-lang-option active';
-        currentLink.href = '#';
-        currentLink.innerHTML = currentFlagHtml + currentConfig.name;
-        optionsDiv.appendChild(currentLink);
-        options.forEach(function(opt) {
-          var link = document.createElement('a');
-          link.className = 'mobile-lang-option';
-          link.href = opt.getAttribute('href');
-          link.innerHTML = opt.innerHTML;
-          optionsDiv.appendChild(link);
-        });
-        container.appendChild(optionsDiv);
-        navMenu.appendChild(container);
-        toggleBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          toggleBtn.classList.toggle('expanded');
-          optionsDiv.classList.toggle('expanded');
-        });
-      }
-      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileLangMenu); }
-      else { initMobileLangMenu(); }
-      window.addEventListener('resize', function() { clearTimeout(window._mlrt); window._mlrt = setTimeout(initMobileLangMenu, 250); });
-    })();
-    </script>
-
     <script>
     (function(){
       var _applied=false;
@@ -1703,7 +1943,6 @@
           var mobileZoom=parseFloat(mobileZoomStr);
           var mobileSrc=img.getAttribute('data-zappy-mobile-src');
           var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
-          var hasMobileOverrides=mobilePos||mobileZoomStr;
           var parentOvf=w.parentElement?((w.parentElement.style.overflow||'')+(window.getComputedStyle(w.parentElement).overflow||'')).trim():'';
           var inConstrainedParent=parentOvf.indexOf('hidden')!==-1||parentOvf.indexOf('clip')!==-1;
           if(inConstrainedParent){
@@ -1738,7 +1977,7 @@
             _img.style.setProperty('transform','none','important');
             _img.style.setProperty('margin','0','important');
           }
-          if(hasMobileOverrides||(_sW>0&&_sH>0)){
+          if(_sW>0&&_sH>0){
             var effZoom=(isFinite(mobileZoom)&&mobileZoom>0)?mobileZoom:(parseFloat(img.getAttribute('data-zappy-zoom'))||1);
             var effPos=mobilePos||img.getAttribute('data-zappy-object-position')||img.style.objectPosition||'50% 50%';
             w.style.setProperty('overflow','hidden','important');
