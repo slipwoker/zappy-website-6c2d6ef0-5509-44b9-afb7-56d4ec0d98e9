@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Terms & Conditions">
     <meta name="twitter:description" content="Terms of service - user rights and obligations">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://swim-by.zappy5.app#organization","name":"Swim-By","url":"https://swim-by.zappy5.app","description":"A swimming courses business focused on teaching swimming skills. The brand centers around aquatic education, likely emphasizing safety, skill development, and confidence in the water. The specific audience, teaching approach, and unique differentiators are yet to be defined."},{"@type":"WebSite","@id":"https://swim-by.zappy5.app#website","url":"https://swim-by.zappy5.app","name":"Swim-By","publisher":{"@id":"https://swim-by.zappy5.app#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://swim-by.zappy5.app"},{"@type":"ListItem","position":2,"name":"Terms","item":"https://swim-by.zappy5.app/terms"}]}]}</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     
@@ -288,11 +289,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -321,10 +348,10 @@
       </a>
     </div>
 
-    <ul class="nav-menu" id="navMenu"><li><a href="#services">Services</a></li><li><a href="#benefits">Benefits</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#stats">Stats</a></li><li><a href="#showcase">Showcase</a></li></ul>
+    <ul class="nav-menu" id="navMenu"><li><a href="/#services">Services</a></li><li><a href="/#benefits">Benefits</a></li><li><a href="/#testimonials">Testimonials</a></li><li><a href="/#stats">Stats</a></li><li><a href="/#showcase">Showcase</a></li></ul>
 
     <div class="nav-cta-container">
-      <a href="#contact" class="nav-cta-btn">Contact</a>
+      <a href="/#contact" class="nav-cta-btn">Contact</a>
     </div>
   </div>
 </nav>
@@ -441,7 +468,7 @@
   </div>
 </section>
     </main>
-    <footer class="site-footer"><div class="footer-wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0E2233"></path></svg></div><div class="footer-inner"><div class="footer-container"><div class="footer-grid"><div class="footer-col footer-col--brand"><div class="footer-logo-wrap"><img src="/assets/swim-by-sports-fitness-education-logo.webp" alt="Swim-By" class="logo" /></div><p class="footer-tagline">Dive into confidence. Premium swimming education crafted for every stage of life — from first strokes to competitive performance.</p><div class="footer-social"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col footer-col--links"><h4 class="footer-heading"><span class="footer-heading-accent"></span>Quick Links</h4><ul class="footer-nav"><li><a href="#services">Services</a></li><li><a href="#benefits">Benefits</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#stats">Stats</a></li><li><a href="#showcase">Showcase</a></li></ul></div><div class="footer-col footer-col--contact"><h4 class="footer-heading"><span class="footer-heading-accent"></span>Get in Touch</h4><ul class="footer-contact"><li><span class="contact-icon"><i class="fas fa-envelope"></i></span><span class="contact-text"><a href="mailto:[business_email]">[business_email]</a></span></li><li><span class="contact-icon"><i class="fas fa-phone"></i></span><span class="contact-text"><a href="tel:[business_phone]">[business_phone]</a></span></li><li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">[business_address]</span></a></li></ul></div><div class="footer-col footer-col--cta"><h4 class="footer-heading"><span class="footer-heading-accent"></span>Start Swimming</h4><p class="footer-cta-text">Ready to make your move? Reach out today and take the first stroke toward something extraordinary.</p><a href="#services" class="footer-cta-btn">Explore Courses</a></div></div></div></div><div class="footer-bottom"><div class="footer-container"><div class="footer-bottom-inner"><p class="footer-copyright">© 2026 Swim-By. All rights reserved.</p><div class="footer-legal"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a><a href="/accessibility">Accessibility</a><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></div></div></footer>
+    <footer class="site-footer"><div class="footer-wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0E2233"></path></svg></div><div class="footer-inner"><div class="footer-container"><div class="footer-grid"><div class="footer-col footer-col--brand"><div class="footer-logo-wrap"><img src="/assets/swim-by-sports-fitness-education-logo.webp" alt="Swim-By" class="logo" /></div><p class="footer-tagline">Dive into confidence. Premium swimming education crafted for every stage of life — from first strokes to competitive performance.</p><div class="footer-social"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col footer-col--links"><h4 class="footer-heading"><span class="footer-heading-accent"></span>Quick Links</h4><ul class="footer-nav"><li><a href="/#services">Services</a></li><li><a href="/#benefits">Benefits</a></li><li><a href="/#testimonials">Testimonials</a></li><li><a href="/#stats">Stats</a></li><li><a href="/#showcase">Showcase</a></li></ul></div><div class="footer-col footer-col--contact"><h4 class="footer-heading"><span class="footer-heading-accent"></span>Get in Touch</h4><ul class="footer-contact"><li><span class="contact-icon"><i class="fas fa-envelope"></i></span><span class="contact-text"><a href="mailto:[business_email]">[business_email]</a></span></li><li><span class="contact-icon"><i class="fas fa-phone"></i></span><span class="contact-text"><a href="tel:[business_phone]">[business_phone]</a></span></li><li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">[business_address]</span></a></li></ul></div><div class="footer-col footer-col--cta"><h4 class="footer-heading"><span class="footer-heading-accent"></span>Start Swimming</h4><p class="footer-cta-text">Ready to make your move? Reach out today and take the first stroke toward something extraordinary.</p><a href="/#services" class="footer-cta-btn">Explore Courses</a></div></div></div></div><div class="footer-bottom"><div class="footer-container"><div class="footer-bottom-inner"><p class="footer-copyright">© 2026 Swim-By. All rights reserved.</p><div class="footer-legal"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a><a href="/accessibility">Accessibility</a><a href="https://zappy5.com" target="_blank" class="zappy-attribution">Generated by Zappy</a></div></div></div></div></footer>
     <div data-integration="accessibility:toolbar"></div>
 
     <script src="/script.js"></script>

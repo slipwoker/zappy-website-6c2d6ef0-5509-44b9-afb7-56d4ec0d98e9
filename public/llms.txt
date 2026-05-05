@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# Swim-By — Generative Engine Optimization Map
+
+> A swimming courses business focused on teaching swimming skills. The brand centers around aquatic education, likely emphasizing safety, skill development, and confidence in the water. The specific audience, teaching approach, and unique differentiators are yet to be defined.
 
 ---
 
@@ -24,12 +26,45 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://swim-by.zappy5.app
+- Endpoint: https://swim-by.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://swim-by.zappy5.app/sitemap.xml
-- **Robots.txt**: https://swim-by.zappy5.app/robots.txt
+## About Swim-By
+A swimming courses business focused on teaching swimming skills. The brand centers around aquatic education, likely emphasizing safety, skill development, and confidence in the water. The specific audience, teaching approach, and unique differentiators are yet to be defined.
+
+## Services/Products
+- swimming courses
+
+## Target Audience
+- Fitness Enthusiasts
+- Senior Health Seekers
+- Adult Beginners
+- Competitive Swimmers
+
+## Industry
+sports & fitness education
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://swim-by.zappy5.app/sitemap.xml
+- Robots: https://swim-by.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://swim-by.zappy5.app/llms-full.txt
